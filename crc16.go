@@ -53,7 +53,7 @@ func CheckSum(data []byte) uint16 {
 	}
 	return crc16
 }
-
+//http://www.lammertbies.nl/comm/info/crc-calculation.html
 func Test() {
 	data := []byte("An example of a go language function performing Modbus CRC16 generation")
 	crc16 := CheckSum(data)
